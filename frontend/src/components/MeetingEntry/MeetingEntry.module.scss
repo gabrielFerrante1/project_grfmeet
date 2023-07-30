@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardLeft {
+    position: relative;
+    height: fit-content;
+
+    .video {
+        border-radius: 5px;
+        background-color: rgb(34, 34, 34);
+        width: 650px;
+        height: 380px;
+    }
+
+    .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+        bottom: 0;
+        margin-bottom: 20px;
+        position: absolute;
+    }
+
+    .controlsItem {
+        border: 1px solid white;
+        padding: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.329);
+        }
+
+        .controlsItemIcon {
+            font-size: 23px;
+            color: white;
+        }
+    }
+
+    .controlsItemDisabled {
+        border-color: transparent;
+        background-color: rgb(255, 60, 60);
+
+        &:hover {
+            background-color: rgb(247, 104, 104);
+        }
+    }
+}
+
+.cardRight {
+    width: 330px;
+    text-align: justify;
+
+    h3 {
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    button {
+        margin-top: 80px;
+        padding: 11px 20px;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 30px;
+        background-color: rgb(30, 119, 252);
+        width: 100%;
+    }
+}

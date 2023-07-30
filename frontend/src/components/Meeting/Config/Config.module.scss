@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 10px 14px;
+    border-radius: 5px; 
+    background-color: rgb(241, 243, 244);
+
+    .cardLabel {
+        font-size: 13px;
+        font-family: 'Nunito', sans-serif;
+        color: rgba(29, 29, 29, 0.979)
+    }
+}

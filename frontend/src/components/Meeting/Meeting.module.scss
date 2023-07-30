@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: rgb(32, 33, 36);
+    width: 100%;
+    overflow: hidden;
+}
+
+.participants {
+    flex: 1;
+}
+
+.cardDetail {
+    transition: all .8s;
+    background-color: white;
+    border-radius: 5px;
+    max-height: 88.8vh;
+    overflow: hidden;
+
+    .cardDetailHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 35px 14px 25px;
+        border-bottom: 1px solid rgb(230, 230, 230);
+
+        span {
+            font-weight: 500;
+            font-family: 'Nunito', sans-serif;
+            color: rgb(53, 54, 58);
+            font-size: 1.125rem;
+        }
+
+        svg {
+            stroke-width: 7px;
+            font-size: 23px;
+            color: rgb(88, 88, 88);
+            cursor: pointer;
+
+            &:hover {
+                color: rgb(29, 98, 247);
+            }
+        }
+    }
+
+    .cardDetailBody {
+        height: 100%;
+    }
+}

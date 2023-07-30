@@ -1,0 +1,86 @@
+.container {
+    width: 100%;
+    padding: 0 40px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background: rgb(32, 33, 36);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.controlsItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: rgb(61, 61, 61);
+    color: rgb(219, 216, 216);
+    cursor: pointer;
+    transition: all .1s;
+
+    &:hover {
+        background-color: rgb(80, 80, 80);
+    }
+}
+
+.controlsItemBlocked {
+    background-color: rgb(209, 43, 43);
+
+    &:hover {
+        background-color: rgb(226, 78, 78);
+    }
+}
+
+.controlsItemLeave {
+    padding: 9.5px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: rgb(212, 52, 52);
+    color: rgb(219, 216, 216);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(226, 86, 86);
+    }
+}
+
+.meetingDetails {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 300px;
+}
+
+.meetingDetailsItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    transition: all .2s;
+    font-size: 24px;
+    color: rgb(219, 216, 216);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(179, 179, 179, 0.116);
+    }
+
+}
+
+.meetingDetailsItemActive {
+    background-color: rgba(179, 179, 179, 0.116);
+    color: rgb(82, 162, 253);
+
+}

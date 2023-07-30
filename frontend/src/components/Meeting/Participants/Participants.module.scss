@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.card {
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    margin: 0px 18px;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(94, 94, 94);
+    font-family: 'Nunito', sans-serif;
+    padding: 9px 28px 9px 20px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.userApplicant {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px 8px 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px 8px 20px;
+    gap: 15px;
+}
+
+.userAvatarImg,
+.userApplicantAvatar {
+    width: 37px;
+    height: 37px;
+    font-size: 5px;
+
+}
+
+.userInfo,
+.userApplicantInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .userInfoName,
+    .userApplicantInfoName {
+        font-weight: 700;
+        font-size: 15px;
+        font-family: 'Nunito', sans-serif;
+        color: rgb(73, 73, 73);
+    }
+
+    .userInfoEmail,
+    .userApplicantInfoEmail {
+        font-weight: 600;
+        font-size: 13px;
+        font-family: 'Nunito', sans-serif;
+        margin-top: -2.5px;
+        color: rgb(121, 121, 121);
+    }
+}
+
+.userApplicantActions {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0 0 40px;
+}
+
+.userActions {
+    padding: 13px;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: all .2s;
+
+    .userActionsIcon {
+        color: rgb(66, 66, 66);
+        font-size: 20px;
+    }
+
+    &:hover {
+        background: rgba(238, 238, 238, 0.822);
+    }
+}

@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 100%;
+}
+
+.userVideo {
+    min-width: 400px;
+    border: 2px solid rgb(68, 68, 68);
+    border-radius: 5px;
+    position: relative;
+    height: 234px;
+    background-color: rebeccapurple;
+
+    .video {
+        min-width: 400px;
+        min-height: 230px;
+        border-radius: 3px;
+    }
+
+    .controls {
+        width: 100%;
+        justify-content: center;
+        bottom: 10px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+}
